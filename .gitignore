@@ -1,0 +1,26 @@
+# created by virtualenv automatically
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Distribution
+*.egg-info/
+build/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment/Secrets
+*.env
