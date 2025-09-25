@@ -11,15 +11,15 @@ g = 9.81  # m/s^2
 
 # -------------------- PARAMS (edit me) --------------------
 # Geometrie (m)
-L1, L2, L3 = 0.18, 0.20, 0.02
+L1, L2, L3 = 0.18, 0.18, 0.04
 
 # Distanzen a..g (m)
 a = 0.05          # shoulder -> M_phi3 (auf/nahe L1)
 b = 0.5 * L1      # shoulder -> CoM(L1)
 c = 0.00          # elbow   -> M_phi4
-d = 0.05          # elbow   -> M_phi5
+d = 0.03          # elbow   -> M_phi5
 e = 0.5 * L2      # elbow   -> CoM(L2)
-f = 0.02          # wrist   -> M_phi6
+f = 0.00          # wrist   -> M_phi6
 g_ = 0.5 * L3     # wrist   -> CoM(L3)
 
 # Zusätzliche Querradien (m) für Rollachsen (J4/J6) und Massenschwerpunkte
@@ -32,21 +32,21 @@ r_payload = 0.025 # effektiver Payload-Radius (angenommener Greiferbereich)
 
 
 # Massen (kg)
-m_payload = 1.00
+m_payload = 0.80
 m_tooling = 0.10
-tool_frac_on_L3 = 0.2
-m_L1, m_L2, m_L3 = 0.35, 0.25, 0.10
+tool_frac_on_L3 = 0.5
+m_L1, m_L2, m_L3 = 0.250, 0.150, 0.080
 m_M3, m_M4, m_M5, m_M6 = 0.692, 0.310, 0.310, 0.140
 
 # Zielkinematik (Default)
 omega_out_max_default = np.deg2rad(45.0)  # rad/s
 alpha_out_default = 3.0                   # rad/s^2
-SF = 1.2
+SF = 1.5
 
 # Gelenk-spezifische Kinematik (bei Bedarf anpassen)
 omega_out_max_per_joint = {
     "J1": np.deg2rad(45),
-    "J2": np.deg2rad(45),
+    "J2": np.deg2rad(50),
     "J3": np.deg2rad(45),
     "J4": np.deg2rad(120),
     "J5": np.deg2rad(90),
