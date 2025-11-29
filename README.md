@@ -46,6 +46,3 @@ pip install numpy pandas matplotlib
 
 ---
 
-## Notes
-
-This model provides *engineering-level estimation* only. For detailed design (FEM, compliance, friction, full dynamics), further refinement or additional tools are recommended.
